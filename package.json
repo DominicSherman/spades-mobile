@@ -1,0 +1,69 @@
+{
+  "name": "spades",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@react-native-firebase/analytics": "^10.8.0",
+    "@react-native-firebase/app": "^10.8.0",
+    "react": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-animate-number": "^0.1.2",
+    "react-native-linear-gradient": "^2.5.3",
+    "react-native-platform-touchable": "^1.1.1",
+    "react-native-scripts": "^2.0.1",
+    "react-native-vector-icons": "^4.6.0",
+    "react-redux": "^5.0.7",
+    "react-test-renderer": "16.13.1",
+    "redux": "^4.0.0",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.5.1",
+    "eslint-config-get-off-my-lawn": "^4.0.1",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "coverageDirectory": ".coverage",
+    "collectCoverageFrom": [
+      "<rootDir>/src/*/*.js",
+      "<rootDir>/src/*.js",
+      "<rootDir>/index.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/src/constants"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|react-router-native)/"
+    ],
+    "testMatch": [
+      "<rootDir>/test/**/*.test.js"
+    ],
+    "moduleNameMapper": {
+      "^react-redux": "<rootDir>/test/stubs/react-redux-stub.js",
+      "^react-native-firebase": "<rootDir>/test/stubs/react-native-firebase-stub.js"
+    }
+  }
+}
